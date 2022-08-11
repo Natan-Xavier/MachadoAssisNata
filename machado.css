@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/*
+    cor1 -#A52502
+    cor2 -#154B52
+    cor3 - #000B0D
+    cor4 - #1C8394
+    cor5 - ##154B52
+*/
+/*Variavel*/
+:root {
+    --cor1: #A52502;
+    --cor2: #390D02;
+    --cor3: #000B0D;
+    --cor4: #1C8394;
+    --cor5: #154B52;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor4);
+    font-family: 'Roboto', sans-serif;
+    /*Roboto é a fonte q eu importei, para utiliza-lá(ou até msm outra) precisa colocar '' e dps colocar sans-serif EU ACHO, MASSSS antes tem q importala*/
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    color: black;
+    text-shadow: black 1px 1px 1px;
+    font-weight: bold;
+
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    /*Padding = Espaçamento*/
+    box-shadow: black 3px 2px 2px 2px;
+
+}
+
+/*O > serve para usar os q tem dentro do bagulho
+    Tipo "Home > AAA" ai pegaria todos os AAA q estão dentro do Home*/
+nav>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+
+nav> :hover {
+    font-size: 20px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    /*Alinha as margens laterais*/
+    min-width: 320px;
+    /*Altura miníma*/
+    max-width: 1000px;
+    /*Altura máxima*/
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 4px 5px 16px 3px black;
+
+}
+
+/*N é necessário deixar o main MAS é para ser mais facil de achar*/
+main h2 {
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    border-radius: 3px;
+    box-shadow: 3px 2px 17px 2px black;
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    /*Espaçamento de paragrafo*/
+    margin-top: 10px;
+}
+
+.p-curio {
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+pre {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+iframe,
+img {
+    border: 10px solid var(--cor1);
+    margin: 30px 0px 30px 0px;
+    /*Top, Direita, Baixo , Esquerda*/
+}
+
+.video-obra {
+    border: 10px solid var(--cor1);
+    margin: 30px 500px 30px 0px;
+}
+
+figcaption {
+    font-size: 12px;
+    margin-bottom: 30px;
+
+}
+
+aside {
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+h4 {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--cor4);
+    margin: 13px 720px 0px 0px;
+    border-radius: 10px;
+
+}
+
+
+ul {
+    list-style-position: inside;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: var(--cor3);
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer>a {
+    text-decoration: none;
+    color: var(--cor1);
+}
